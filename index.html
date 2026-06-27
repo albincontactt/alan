@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our 2nd Anniversary — A journey of love, laughter, and cherished memories. June 28, 2024." />
+  <title>Happy 2nd Anniversary ❤️ — June 28, 2024</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Dancing+Script:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+<!-- ─────── PASSWORD GATE ─────── -->
+<div class="gate-overlay" id="gateOverlay" role="dialog" aria-modal="true" aria-label="Enter password to continue">
+  <!-- Landscape behind gate -->
+  <div class="gate-landscape" aria-hidden="true">
+    <div class="gate-sky"></div>
+    <div class="gate-sun"></div>
+    <div class="gate-hills gate-hills1"></div>
+    <div class="gate-hills gate-hills2"></div>
+    <div class="gate-tree gate-tree1"></div>
+    <div class="gate-tree gate-tree2"></div>
+    <div class="gate-tree gate-tree3"></div>
+    <div class="gate-ground"></div>
+    <div class="gate-vignette"></div>
+  </div>
+  <!-- Gate film grain -->
+  <div class="film-grain" aria-hidden="true"></div>
+  <!-- Gate petals -->
+  <div class="gate-petals" id="gatePetals" aria-hidden="true"></div>
+  <!-- Gate card -->
+  <div class="gate-card">
+    <div class="gate-card-top" aria-hidden="true"></div>
+    <div class="gate-lock-icon" aria-hidden="true">🔒</div>
+    <h1 class="gate-title">Our Story Begins</h1>
+    <p class="gate-subtitle">Enter the 8-digit key to begin the countdown</p>
+    <div class="gate-hint" aria-hidden="true">
+      <span class="gate-hint-line"></span>
+      <span class="gate-hint-text">❤</span>
+      <span class="gate-hint-line"></span>
+    </div>
+    <!-- 8 Digit Boxes -->
+    <div class="gate-digits" id="gateDigits" role="group" aria-label="Password input">
+      <input class="gate-digit" id="gd0" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 1" />
+      <input class="gate-digit" id="gd1" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 2" />
+      <input class="gate-digit" id="gd2" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 3" />
+      <input class="gate-digit" id="gd3" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 4" />
+      <span class="gate-digit-sep" aria-hidden="true">—</span>
+      <input class="gate-digit" id="gd4" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 5" />
+      <input class="gate-digit" id="gd5" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 6" />
+      <input class="gate-digit" id="gd6" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 7" />
+      <input class="gate-digit" id="gd7" type="password" inputmode="numeric" maxlength="1" pattern="[0-9]" autocomplete="off" aria-label="Digit 8" />
+    </div>
+    <!-- Error message -->
+    <p class="gate-error" id="gateError" aria-live="polite"></p>
+    <!-- Unlock button -->
+    <button class="gate-unlock-btn" id="gateUnlockBtn" aria-label="Unlock">
+      <span class="gate-btn-icon" aria-hidden="true">🗝️</span>
+      Open Our Story
+    </button>
+    <p class="gate-footer-note">Only for us ❤️</p>
+  </div>
+</div>
+<!-- Film Grain Overlay -->
+<div class="film-grain" aria-hidden="true"></div>
+<!-- Floating Petals Container -->
+<div class="petals-container" id="petalsContainer" aria-hidden="true"></div>
+<!-- Hidden Hearts -->
+<div class="hidden-hearts-layer" id="hiddenHeartsLayer" aria-hidden="true"></div>
+<!-- Overflow Poster Decorations — Real Malayalam Movie Posters -->
+<div class="overflow-posters" aria-hidden="true">
+  <!-- Left side: Premam poster -->
+  <div class="side-poster poster-left1">
+    <div class="poster-frame">
+      <img src="assets/posters/poster1.jpg" alt="Premam Malayalam Movie Poster" class="poster-img" loading="lazy" />
+      <div class="poster-film-strip" aria-hidden="true"></div>
+      <div class="poster-badge">
+        <span>❤️</span>
+        <span class="poster-badge-text">പ്രേമം</span>
+      </div>
+    </div>
+  </div>
+  <!-- Left side: Vettom poster -->
+  <div class="side-poster poster-left2">
+    <div class="poster-frame">
+      <img src="assets/posters/poster3.jpg" alt="Vettom Malayalam Movie Poster" class="poster-img" loading="lazy" />
+      <div class="poster-film-strip" aria-hidden="true"></div>
+      <div class="poster-badge">
+        <span>🎬</span>
+        <span class="poster-badge-text">വെട്ടം</span>
+      </div>
+    </div>
+  </div>
+  <!-- Right side: Jasmine and Jasmine poster -->
+  <div class="side-poster poster-right1">
+    <div class="poster-frame">
+      <img src="assets/posters/poster2.jpg" alt="Jasmine and Jasmine Malayalam Movie Poster" class="poster-img" loading="lazy" />
+      <div class="poster-film-strip" aria-hidden="true"></div>
+      <div class="poster-badge">
+        <span>🌸</span>
+        <span class="poster-badge-text">Jasmine</span>
+      </div>
+    </div>
+  </div>
+  <!-- Right side: Premam again (repeat for symmetry) -->
+  <div class="side-poster poster-right2">
+    <div class="poster-frame">
+      <img src="assets/posters/poster1.jpg" alt="Premam Malayalam Movie Poster" class="poster-img" loading="lazy" />
+      <div class="poster-film-strip" aria-hidden="true"></div>
+      <div class="poster-badge">
+        <span>💛</span>
+        <span class="poster-badge-text">പ്രേമം</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hidden Message Popup -->
+<div class="heart-popup" id="heartPopup" role="dialog" aria-live="polite">
+  <span class="heart-popup-close" id="heartPopupClose" aria-label="Close message">×</span>
+  <div class="heart-popup-inner">
+    <div class="heart-popup-icon">❤️</div>
+    <p class="heart-popup-text" id="heartPopupText"></p>
+  </div>
+</div>
+<!-- 🚌 KSRTC Hidden Memory Popup -->
+<div class="ksrtc-popup" id="ksrtcPopup" role="dialog" aria-live="polite" aria-hidden="true">
+  <span class="ksrtc-popup-close" id="ksrtcPopupClose" aria-label="Close memory">×</span>
+  <div class="ksrtc-popup-inner">
+    <div class="ksrtc-popup-bus">🚌</div>
+    <p class="ksrtc-popup-text" id="ksrtcPopupText"></p>
+    <div class="ksrtc-popup-route">KSRTC — Sulthan Bathery ❤️</div>
+  </div>
+</div>
+<!-- ─────────────────────────────────── HERO ─────────────────────────────────── -->
+<section class="hero" id="hero">
+  <!-- Real couple photo background layers -->
+  <div class="hero-photo-bg" aria-hidden="true">
+    <!-- Primary: formal couple photo -->
+    <div class="hero-photo-layer hero-photo-primary" style="background-image:url('assets/images/photo5.JPG')"></div>
+    <!-- Secondary: moonlit night photo (cross-fades) -->
+    <div class="hero-photo-layer hero-photo-secondary" style="background-image:url('assets/images/photo35.JPG')"></div>
+    <!-- Sepia/aged overlay -->
+    <div class="hero-photo-sepia" aria-hidden="true"></div>
+    <!-- Vignette -->
+    <div class="hero-photo-vignette" aria-hidden="true"></div>
+    <!-- Film grain -->
+    <div class="hero-photo-grain" aria-hidden="true"></div>
+  </div>
+  <!-- Malayalam cinema poster border frame overlay -->
+  <div class="hero-cinema-frame" aria-hidden="true">
+    <div class="cinema-frame-top"></div>
+    <div class="cinema-frame-bottom"></div>
+    <div class="cinema-frame-left"></div>
+    <div class="cinema-frame-right"></div>
+    <div class="cinema-corner cinema-corner-tl">✦</div>
+    <div class="cinema-corner cinema-corner-tr">✦</div>
+    <div class="cinema-corner cinema-corner-bl">✦</div>
+    <div class="cinema-corner cinema-corner-br">✦</div>
+  </div>
+  <!-- Floating petals still over photo -->
+  <div class="rain-layer" aria-hidden="true" id="rainLayer"></div>
+  <div class="hero-content hero-content-over-photo">
+    <!-- Malayalam cinema style title treatment -->
+    <div class="cinema-title-block">
+      <div class="cinema-studio-line" aria-hidden="true">— ഒരു പ്രണയ കഥ —</div>
+      <div class="hero-ornament" aria-hidden="true">~ ~ ~ <span class="hidden-ksrtc-icon" data-index="7" title="Hidden Memory!">🚌</span></div>
+      <h1 class="hero-title">Happy 2nd Anniversary</h1>
+      <div class="hero-heart" aria-hidden="true">❤️</div>
+      <div class="hero-date-row">
+        <span class="hero-date-line" aria-hidden="true"></span>
+        <p class="hero-date">June 28, 2024</p>
+        <span class="hero-date-line" aria-hidden="true"></span>
+      </div>
+      <p class="hero-subtitle">The Day That Changed Everything</p>
+      <p class="hero-tagline">Every beautiful story begins with one unforgettable day.</p>
+    </div>
+    <a href="#journey" class="hero-btn" id="openStoryBtn" aria-label="Open our story">
+      Open Our Story <span aria-hidden="true">❤️</span>
+    </a>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-hint-dot"></div>
+    <span>scroll</span>
+  </div>
+</section>
+<!-- ─── MOVIE POSTER STRIP — scrolling vintage posters between hero & journey ─── -->
+<div class="poster-strip-wrap" aria-hidden="true">
+  <div class="poster-strip-inner">
+    <!-- Real posters interspersed with couple photos in vintage frames -->
+    <div class="strip-item strip-movie"><img src="assets/posters/poster1.jpg" alt="Premam"/><span>പ്രേമം</span></div>
+    <div class="strip-item strip-photo"><img src="assets/images/photo7.JPG" alt="us"/><span>💛 Us</span></div>
+    <div class="strip-item strip-movie"><img src="assets/posters/poster2.jpg" alt="Jasmine"/><span>Jasmine</span></div>
+    <div class="strip-item strip-photo"><img src="assets/images/photo13.JPG" alt="us"/><span>💛 Us</span></div>
+    <div class="strip-item strip-movie"><img src="assets/posters/poster3.jpg" alt="Vettom"/><span>വെട്ടം</span></div>
+    <div class="strip-item strip-photo"><img src="assets/images/photo36.JPG" alt="us"/><span>💛 Us</span></div>
+    <!-- Repeat for seamless loop -->
+    <div class="strip-item strip-movie"><img src="assets/posters/poster1.jpg" alt="Premam"/><span>പ്രേമം</span></div>
+    <div class="strip-item strip-photo"><img src="assets/images/photo7.JPG" alt="us"/><span>💛 Us</span></div>
+    <div class="strip-item strip-movie"><img src="assets/posters/poster2.jpg" alt="Jasmine"/><span>Jasmine</span></div>
+    <div class="strip-item strip-photo"><img src="assets/images/photo13.JPG" alt="us"/><span>💛 Us</span></div>
+    <div class="strip-item strip-movie"><img src="assets/posters/poster3.jpg" alt="Vettom"/><span>വെട്ടം</span></div>
+    <div class="strip-item strip-photo"><img src="assets/images/photo36.JPG" alt="us"/><span>💛 Us</span></div>
+  </div>
+</div>
+<!-- ─────────────────────────────────── JOURNEY ─────────────────────────────────── -->
+<section class="journey" id="journey">
+  <!-- Subtle blurred photo background -->
+  <div class="section-photo-bg" aria-hidden="true"
+       style="background-image:url('assets/images/photo35.JPG')"></div>
+  <div class="section-header">
+    <div class="section-ornament" aria-hidden="true">✦ ✦ ✦ <span class="hidden-ksrtc-icon" data-index="8" title="Hidden Memory!">🚌</span></div>
+    <h2 class="section-title">Our Journey</h2>
+    <p class="section-sub">A story written in moments</p>
+  </div>
+  <div class="timeline">
+    <div class="timeline-spine" aria-hidden="true"></div>
+    <div class="timeline-item fade-in-up" data-side="left">
+      <div class="timeline-card">
+        <div class="timeline-icon" aria-hidden="true">❤️</div>
+        <div class="timeline-body">
+          <span class="timeline-tag">Beginning</span>
+          <h3 class="timeline-date">June 28, 2024</h3>
+          <p class="timeline-desc">The day everything changed. The universe conspired, and two souls found each other in the most ordinary of moments.</p>
+        </div>
+      </div>
+      <div class="timeline-dot" aria-hidden="true"></div>
+    </div>
+    <div class="timeline-item fade-in-up" data-side="right">
+      <div class="timeline-card">
+        <div class="timeline-icon" aria-hidden="true">📷</div>
+        <div class="timeline-body">
+          <span class="timeline-tag">Memories</span>
+          <h3 class="timeline-date">First Memories</h3>
+          <p class="timeline-desc">The beginning of countless smiles. Every shared glance, every small laugh—each one a photograph for the heart.</p>
+        </div>
+      </div>
+      <div class="timeline-dot" aria-hidden="true"></div>
+    </div>
+    <div class="timeline-item fade-in-up" data-side="left">
+      <div class="timeline-card">
+        <div class="timeline-icon" aria-hidden="true">💬</div>
+        <div class="timeline-body">
+          <span class="timeline-tag">Connection</span>
+          <h3 class="timeline-date">Endless Conversations</h3>
+          <p class="timeline-desc">Late-night talks that never felt long enough. Words that flowed like rain on a quiet evening, unhurried and honest.</p>
+        </div>
+      </div>
+      <div class="timeline-dot" aria-hidden="true"></div>
+    </div>
+    <div class="timeline-item fade-in-up" data-side="right">
+      <div class="timeline-card">
+        <div class="timeline-icon" aria-hidden="true">🌸</div>
+        <div class="timeline-body">
+          <span class="timeline-tag">Moments</span>
+          <h3 class="timeline-date">Beautiful Moments</h3>
+          <p class="timeline-desc">Captured forever in our hearts. The little things — a song, a scent, a rainy afternoon — that became everything.</p>
+        </div>
+      </div>
+      <div class="timeline-dot" aria-hidden="true"></div>
+    </div>
+    <div class="timeline-item fade-in-up" data-side="left">
+      <div class="timeline-card">
+        <div class="timeline-icon" aria-hidden="true">❤️</div>
+        <div class="timeline-body">
+          <span class="timeline-tag">Anniversary</span>
+          <h3 class="timeline-date">Two Years Together</h3>
+          <p class="timeline-desc">Every day became another beautiful memory. Seven hundred and thirty reasons to smile, woven into a single love story.</p>
+        </div>
+      </div>
+      <div class="timeline-dot" aria-hidden="true"></div>
+    </div>
+    <div class="timeline-item fade-in-up" data-side="right">
+      <div class="timeline-card">
+        <div class="timeline-icon" aria-hidden="true">♾️</div>
+        <div class="timeline-body">
+          <span class="timeline-tag">Forever</span>
+          <h3 class="timeline-date">Forever</h3>
+          <p class="timeline-desc">Our story continues… written not in ink, but in heartbeats, in laughter, in the quiet joy of just being together.</p>
+        </div>
+      </div>
+      <div class="timeline-dot" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+<!-- 🌿 CINEMATIC DIVIDER: Misty Wayanad Road -->
+<div class="scenic-divider scenic-mist-road" aria-hidden="true">
+  <div class="scenic-gradient-overlay"></div>
+  <div class="scenic-mist-flow"></div>
+  <div class="scenic-caption">Wayanad Winding Roads... 🌿🚌 <span class="hidden-ksrtc-icon" data-index="9" title="Hidden Memory!">🚌</span></div>
+</div>
+<!-- 🚍 NEW SECTION: Every Journey Had One Destination... You -->
+<section class="ksrtc-intro" id="ksrtc-intro">
+  <div class="ksrtc-road-backdrop" aria-hidden="true">
+    <div class="ksrtc-sky"></div>
+    <div class="ksrtc-mountains"></div>
+    <div class="ksrtc-road-strip">
+      <div class="ksrtc-road-line"></div>
+    </div>
+    <!-- Detailed CSS KSRTC Bus -->
+    <div class="ksrtc-bus-wrap animate-drive" id="ksrtcIntroBus">
+      <div class="ksrtc-bus">
+        <div class="bus-dest-board">SULTHAN BATHERY</div>
+        <div class="bus-windshield"></div>
+        <div class="bus-windows">
+          <div class="bus-window"></div>
+          <div class="bus-window"></div>
+          <div class="bus-window"></div>
+          <div class="bus-window"></div>
+        </div>
+        <div class="bus-logo">KSRTC</div>
+        <div class="bus-stripe"></div>
+        <div class="bus-wheel bus-wheel-front"></div>
+        <div class="bus-wheel bus-wheel-rear"></div>
+        <div class="bus-headlight"></div>
+      </div>
+      <div class="bus-exhaust-smoke"></div>
+    </div>
+  </div>
+  
+  <div class="section-header ksrtc-header">
+    <div class="section-ornament" aria-hidden="true">🚍 ✦ 🚍</div>
+    <h2 class="section-title text-white">Every Journey Had One Destination... You ❤️</h2>
+  </div>
+  
+  <div class="ksrtc-intro-content">
+    <p class="ksrtc-para">Some people remember the destination. <span class="hidden-ksrtc-icon" data-index="1" title="Hidden Memory!">🚌</span></p>
+    <p class="ksrtc-para highlight">We remember the journey.</p>
+    <p class="ksrtc-para">Every KSRTC ride became another chapter of our story.</p>
+    <p class="ksrtc-para">Those early mornings, familiar bus seats, shared glances, and conversations made every trip unforgettable.</p>
+    <p class="ksrtc-para">We never knew that an ordinary bus journey would become the beginning of the most beautiful chapter of our lives. <span class="hidden-ksrtc-icon" data-index="2" title="Hidden Memory!">🚌</span></p>
+  </div>
+</section>
+<!-- 🌿 CINEMATIC DIVIDER: Tea Plantations -->
+<div class="scenic-divider scenic-tea-plantations" aria-hidden="true">
+  <div class="scenic-gradient-overlay"></div>
+  <div class="scenic-caption">Sulthan Bathery Slopes... 🌿🌱</div>
+</div>
+<!-- 🚌 NEW SECTION: Our Journey Map -->
+<!-- 🚌 JOURNEY MAP: Sulthan Bathery -> Nadukani -> Vazhikadavu -> Edakkara -> Pandikkad -->
+<section class="journey-map-section" id="journey-map">
+  <div class="section-header">
+    <div class="section-ornament" aria-hidden="true">🗺️ ✦ 🗺️ <span class="hidden-ksrtc-icon" data-index="3" title="Hidden Memory!">🚌</span></div>
+    <h2 class="section-title">Our Journey Map</h2>
+    <p class="section-sub">Scroll to trace our path: Sulthan Bathery ➜ Nadukani ➜ Vazhikadavu ➜ Edakkara ➜ Pandikkad</p>
+  </div>
+  <div class="map-board-wrap">
+    <div class="map-board">
+      <div class="map-parchment-texture"></div>
+      <div class="map-grid-lines"></div>
+      
+      <!-- Hand-drawn Kerala map route -->
+      <svg class="map-svg-route" viewBox="0 0 1000 600" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="routeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#C8A84B" />
+            <stop offset="50%" stop-color="#FF6B2B" />
+            <stop offset="100%" stop-color="#6B2D3E" />
+          </linearGradient>
+        </defs>
+        <!-- Dotted Path through the 5 locations -->
+        <path id="scrollRoutePath" d="M 150,120 C 250,140 300,180 350,210 C 420,250 480,270 550,300 C 620,330 670,360 720,390 C 780,430 830,460 880,480" fill="none" stroke="url(#routeGradient)" stroke-width="5" stroke-dasharray="10,12" stroke-linecap="round" />
+        
+        <!-- Moving KSRTC Bus along route inside SVG for perfect responsiveness -->
+        <g id="mapScrollingBus" transform="translate(150, 120)">
+          <rect x="-24" y="-12" width="48" height="24" rx="4" fill="#6B121A" stroke="#E2C97E" stroke-width="2" />
+          <rect x="8" y="-10" width="10" height="20" fill="#EADCB9" />
+          <line x1="-12" y1="-12" x2="-12" y2="12" stroke="#FFF" stroke-width="2" />
+          <circle cx="-12" cy="12" r="6" fill="#111" />
+          <circle cx="12" cy="12" r="6" fill="#111" />
+          <text x="-16" y="4" fill="#E2C97E" font-family="monospace" font-size="10" font-weight="bold">KSRTC</text>
+        </g>
+      </svg>
+      
+      <!-- Clickable Pin Nodes for the 5 stops -->
+      <div class="map-pin pin-bathery" style="left: 15%; top: 20%;" data-node="bathery" role="button" aria-haspopup="true">
+        <div class="pin-marker">📍</div>
+        <div class="pin-label">Sulthan Bathery</div>
+      </div>
+      
+      <div class="map-pin pin-nadukani" style="left: 35%; top: 35%;" data-node="nadukani" role="button" aria-haspopup="true">
+        <div class="pin-marker">⛰️ <span class="hidden-ksrtc-icon" data-index="4" title="Hidden Memory!">🚌</span></div>
+        <div class="pin-label">Nadukani</div>
+      </div>
+      
+      <div class="map-pin pin-vazhikadavu" style="left: 55%; top: 50%;" data-node="vazhikadavu" role="button" aria-haspopup="true">
+        <div class="pin-marker">🌿 <span class="hidden-ksrtc-icon" data-index="5" title="Hidden Memory!">🚌</span></div>
+        <div class="pin-label">Vazhikadavu</div>
+      </div>
+      
+      <div class="map-pin pin-edakkara" style="left: 72%; top: 65%;" data-node="edakkara" role="button" aria-haspopup="true">
+        <div class="pin-marker">📍</div>
+        <div class="pin-label">Edakkara</div>
+      </div>
+
+      <div class="map-pin pin-pandikkad" style="left: 88%; top: 80%;" data-node="pandikkad" role="button" aria-haspopup="true">
+        <div class="pin-marker">❤️ <span class="hidden-ksrtc-icon" data-index="6" title="Hidden Memory!">🚌</span></div>
+        <div class="pin-label">Pandikkad</div>
+      </div>
+    </div>
+  </div>
+  <!-- Hand-drawn Memory Popups -->
+  <div class="map-memory-modal" id="mapMemoryModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="map-memory-card">
+      <button class="map-memory-close" id="mapMemoryClose" aria-label="Close memory">×</button>
+      <div class="map-memory-stamp">APPROVED</div>
+      <h3 class="map-memory-title" id="mapMemoryTitle">Memory Location</h3>
+      <p class="map-memory-instruction">Edit this memory directly — changes save automatically ❤️</p>
+      <div class="map-memory-edit-wrap">
+        <textarea class="map-memory-textarea" id="mapMemoryText" rows="4" aria-label="Edit memory text"></textarea>
+      </div>
+      <div class="map-memory-footer">
+        <span class="map-memory-date">June 28, 2024</span>
+        <button class="map-memory-save-btn" id="mapMemorySaveBtn">Save Memory</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 🌿 CINEMATIC DIVIDER: Rainy Roadside -->
+<div class="scenic-divider scenic-rainy-road" aria-hidden="true">
+  <div class="scenic-gradient-overlay"></div>
+  <div class="scenic-rain-overlay"></div>
+  <div class="scenic-caption">Ghat Road & Forest Trails... 🌧️🌴</div>
+</div>
+<!-- ─────────────────────────────────── PHOTO GALLERY ─────────────────────────────────── -->
+<section class="gallery" id="gallery">
+  <!-- Subtle blurred photo background -->
+  <div class="section-photo-bg" aria-hidden="true"
+       style="background-image:url('assets/images/photo13.JPG')"></div>
+  <div class="section-header">
+    <div class="section-ornament" aria-hidden="true">✦ ✦ ✦ <span class="hidden-ksrtc-icon" data-index="10" title="Hidden Memory!">🚌</span></div>
+    <h2 class="section-title">Our Memories</h2>
+    <p class="section-sub">Every picture holds a thousand heartbeats</p>
+  </div>
+  <div class="polaroid-scrapbook" id="polaroidScrapbook">
+    <!-- 20 photo placeholders generated by JS -->
+  </div>
+</section>
+<!-- Photo Lightbox -->
+<div class="lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox-close" id="lbClose" aria-label="Close">×</button>
+  <button class="lightbox-prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <button class="lightbox-next" id="lbNext" aria-label="Next photo">›</button>
+  <div class="lightbox-content">
+    <div class="lightbox-img-wrap" id="lbImgWrap">
+      <div class="lb-photo-placeholder" id="lbPhoto">
+        <div class="lb-placeholder-inner">
+          <span class="lb-ph-icon">📷</span>
+          <span class="lb-ph-label" id="lbPhotoLabel">Memory #1</span>
+        </div>
+      </div>
+    </div>
+    <p class="lightbox-caption" id="lbCaption">Memory #1</p>
+    <p class="lightbox-counter" id="lbCounter">1 / 20</p>
+  </div>
+</div>
+<!-- ─────────────────────────────────── VIDEO GALLERY ─────────────────────────────────── -->
+<section class="video-gallery" id="videos">
+  <div class="section-photo-bg" aria-hidden="true"
+       style="background-image:url('assets/images/photo36.JPG')"></div>
+  <div class="section-header">
+    <div class="section-ornament" aria-hidden="true">✦ ✦ ✦ <span class="hidden-ksrtc-icon" data-index="11" title="Hidden Memory!">🚌</span></div>
+    <h2 class="section-title">Our Beautiful Moments</h2>
+    <p class="section-sub">Moving memories, forever in motion</p>
+  </div>
+  <div class="video-grid" id="videoGrid">
+    <!-- 10 video placeholders generated by JS -->
+  </div>
+</section>
+<!-- Video Modal -->
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="video-modal-inner">
+    <button class="video-modal-close" id="vmClose" aria-label="Close video">×</button>
+    <div class="video-modal-screen" id="vmScreen">
+      <div class="vm-placeholder">
+        <div class="vm-play-ring" aria-hidden="true">
+          <div class="vm-play-icon">▶</div>
+        </div>
+        <p class="vm-title" id="vmTitle">Beautiful Moment #1</p>
+        <p class="vm-hint">Add your video file here</p>
+      </div>
+      <video id="vmVideo" controls style="display:none;width:100%;max-height:70vh;border-radius:8px;"></video>
+    </div>
+  </div>
+</div>
+<!-- ─────────────────────────────────── MEMORY WALL ─────────────────────────────────── -->
+<section class="memory-wall" id="memoryWall">
+  <div class="section-photo-bg section-photo-darker" aria-hidden="true"
+       style="background-image:url('assets/images/photo7.JPG')"></div>
+  <div class="section-header">
+    <div class="section-ornament" aria-hidden="true">✦ ✦ ✦ <span class="hidden-ksrtc-icon" data-index="12" title="Hidden Memory!">🚌</span></div>
+    <h2 class="section-title">Little Moments We Never Want To Forget</h2>
+    <p class="section-sub">Click any note to edit it</p>
+  </div>
+  <div class="corkboard" id="corkboard">
+    <!-- 15 memory notes generated by JS -->
+  </div>
+</section>
+<!-- ─────────────────────────────────── COUNTDOWN ─────────────────────────────────── -->
+<section class="countdown-section" id="countdown">
+  <!-- Real couple photo behind countdown -->
+  <div class="section-photo-bg section-photo-night" aria-hidden="true"
+       style="background-image:url('assets/images/photo35.JPG')"></div>
+  <div class="countdown-bg" aria-hidden="true"></div>
+  <div class="section-header light">
+    <div class="section-ornament" aria-hidden="true">✦ ✦ ✦ <span class="hidden-ksrtc-icon" data-index="13" title="Hidden Memory!">🚌</span></div>
+    <h2 class="section-title">Counting Every Heartbeat</h2>
+    <p class="section-sub" id="countdownLabel">Countdown Until We Meet Again ❤️</p>
+  </div>
+  <div class="countdown-date-row">
+    <label class="countdown-date-label" for="countdownDateInput">Set Target Date:</label>
+    <input type="datetime-local" id="countdownDateInput" class="countdown-date-input" aria-label="Set countdown target date" />
+    <button class="countdown-date-btn" id="setCountdownBtn" aria-label="Set countdown">Set ❤️</button>
+  </div>
+  <div class="countdown-display" id="countdownDisplay" aria-live="polite">
+    <div class="countdown-unit">
+      <span class="countdown-number" id="cdDays">000</span>
+      <span class="countdown-label">Days</span>
+    </div>
+    <div class="countdown-sep" aria-hidden="true">:</div>
+    <div class="countdown-unit">
+      <span class="countdown-number" id="cdHours">00</span>
+      <span class="countdown-label">Hours</span>
+    </div>
+    <div class="countdown-sep" aria-hidden="true">:</div>
+    <div class="countdown-unit">
+      <span class="countdown-number" id="cdMinutes">00</span>
+      <span class="countdown-label">Minutes</span>
+    </div>
+    <div class="countdown-sep" aria-hidden="true">:</div>
+    <div class="countdown-unit">
+      <span class="countdown-number" id="cdSeconds">00</span>
+      <span class="countdown-label">Seconds</span>
+    </div>
+  </div>
+  <p class="countdown-anniversary">Since June 28, 2024 — <span id="daysTogether">0</span> days of love ❤️</p>
+</section>
+<!-- ─────────────────────────────────── FINAL SURPRISE ─────────────────────────────────── -->
+<section class="surprise-section" id="surprise">
+  <div class="section-header">
+    <div class="section-ornament" aria-hidden="true">✦ ✦ ✦ <span class="hidden-ksrtc-icon" data-index="14" title="Hidden Memory!">🚌</span></div>
+    <h2 class="section-title">One Last Thing…</h2>
+    <p class="section-sub">Press with love</p>
+  </div>
+  <button class="surprise-btn" id="surpriseBtn" aria-label="Open my heart">
+    <span class="surprise-btn-heart" aria-hidden="true">❤️</span>
+    Open My Heart ❤️
+  </button>
+  <div class="surprise-reveal" id="surpriseReveal" aria-live="polite">
+    <div class="surprise-glow" aria-hidden="true"></div>
+    <p class="surprise-date">June 28, 2024</p>
+    <h2 class="surprise-headline">The Day That Changed Everything.</h2>
+    <p class="surprise-wish">Happy Anniversary ❤️</p>
+    <div class="surprise-ornament" aria-hidden="true">~ ❤️ ~</div>
+  </div>
+</section>
+<!-- 🌅 FINAL JOURNEY — KSRTC Sunset Scene -->
+<section class="final-journey-section" id="final-journey">
+  <!-- Sunset Road Backdrop -->
+  <div class="fj-backdrop" aria-hidden="true">
+    <div class="fj-sky"></div>
+    <div class="fj-sun"></div>
+    <div class="fj-clouds">
+      <div class="fj-cloud fj-cloud1"></div>
+      <div class="fj-cloud fj-cloud2"></div>
+    </div>
+    <div class="fj-mountains"></div>
+    <div class="fj-road"></div>
+    <div class="fj-road-marking"></div>
+    <div class="fj-trees">
+      <div class="fj-tree fj-tree1"></div>
+      <div class="fj-tree fj-tree2"></div>
+      <div class="fj-tree fj-tree3"></div>
+      <div class="fj-tree fj-tree4"></div>
+    </div>
+    <!-- Driving KSRTC bus toward sunset -->
+    <div class="fj-bus-wrap" id="fjBusWrap">
+      <div class="ksrtc-bus fj-bus">
+        <div class="bus-dest-board">HOME ❤️</div>
+        <div class="bus-windshield fj-windshield-glow"></div>
+        <div class="bus-windows">
+          <div class="bus-window"></div>
+          <div class="bus-window"></div>
+          <div class="bus-window"></div>
+          <div class="bus-window fj-window-heart">❤</div>
+        </div>
+        <div class="bus-logo">KSRTC</div>
+        <div class="bus-stripe"></div>
+        <div class="bus-wheel bus-wheel-front"></div>
+        <div class="bus-wheel bus-wheel-rear"></div>
+        <div class="bus-headlight fj-headlight-on"></div>
+      </div>
+    </div>
+    <div class="fj-ground"></div>
+    <div class="fj-vignette"></div>
+  </div>
+  <!-- Typewriter Message -->
+  <div class="fj-message-wrap">
+    <div class="fj-message" id="fjMessage" aria-live="polite">
+      <!-- Lines revealed by typewriter JS -->
+    </div>
+  </div>
+  <!-- Petal burst overlay -->
+  <div class="fj-petals" id="fjPetals" aria-hidden="true"></div>
+</section>
+<!-- ─────────────────────────────────── FOOTER ─────────────────────────────────── -->
+<footer class="site-footer" id="footer">
+  <div class="footer-texture" aria-hidden="true"></div>
+  <div class="footer-content">
+    <p class="footer-title">Happy 2nd Anniversary ❤️</p>
+    <p class="footer-date">June 28, 2024</p>
+    <p class="footer-tagline">Forever Together.</p>
+    <div class="footer-ornament" aria-hidden="true">~ ~ ~</div>
+    <p class="footer-note">Made with love, for love. <span class="hidden-ksrtc-icon" data-index="15" title="Hidden Memory!">🚌</span></p>
+  </div>
+</footer>
+<script src="assets-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
